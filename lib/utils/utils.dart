@@ -15,7 +15,7 @@ class Utils {
 
   /// get path of git_hooks library
   static String getOwnPath() {
-    var pacPath = path.fromUri(path.current + '/.packages');
+    var pacPath = path.fromUri(path.current + '/hooks/.packages');
     var pac = File(pacPath);
     var a = pac.readAsStringSync();
     var b = a.split('\n');

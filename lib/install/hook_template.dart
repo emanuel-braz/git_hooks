@@ -71,7 +71,7 @@ Future<bool> preCommit() async {
 /// hooks header
 String createHeader() {
   var rootDir = Directory.current;
-  var f = File(rootDir.path + '/pubspec.yaml');
+  var f = File(rootDir.path + '/hooks/pubspec.yaml');
   var text = f.readAsStringSync();
   Map yaml = loadYaml(text);
   String name = yaml['name'] ?? '';
